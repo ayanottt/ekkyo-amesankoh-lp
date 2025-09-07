@@ -1,3 +1,16 @@
+/* ============================================
+reset
+============================================ */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+ul,ol{
+  list-style: none;
+}
+
+
 /* Base styles for LP wrapper */
 .lp {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

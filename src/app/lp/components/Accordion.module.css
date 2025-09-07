@@ -1,0 +1,117 @@
+:root {
+  --blue: #16558b;     /* 帯の青 */
+  --fg: #0f1720;       /* 文字色 */
+  --muted: #6b7280;    /* サブ */
+  --radius: 6px;
+}
+
+.wrapper {
+  background: var(--blue);
+  padding: 24px 0;
+}
+
+.list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 960px;
+}
+
+.item + .item {
+  margin-top: 16px;
+}
+
+/* 見出し帯 */
+.heading {
+  margin: 0;
+}
+
+/* トリガー（見出し行） */
+.trigger {
+  appearance: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  color: var(--fg);
+  border: none;
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  text-align: left;
+  line-height: 1.6;
+  cursor: pointer;
+  position: relative;
+}
+
+/* フォーカスリング */
+.trigger:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Qテキスト */
+.qText {
+  font-weight: 700;
+}
+
+/* 右端の + アイコン（CSSのみで描画） */
+.icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 16px;
+  height: 2px;
+  background: var(--blue);
+  transition: transform 160ms ease;
+}
+
+.icon::after {
+  transform: rotate(90deg); /* 縦棒で + になる */
+}
+
+/* 開いているときは × っぽく（横棒だけ表示） */
+.trigger[aria-expanded="true"] .icon::after {
+  transform: rotate(0deg); /* 縦棒→横棒に重なって消える */
+}
+
+/* パネル */
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 220ms ease;
+  will-change: max-height;
+}
+
+/* 中身の白ボックス（青帯との間に余白を作る） */
+.panelInner {
+  background: #fff;
+  color: var(--fg);
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 0 24px 20px 24px;
+  border-top: 8px solid var(--blue); /* 画像の青い帯の雰囲気 */
+}
+
+/* 開いた状態：十分大きな max-height にする（内容量に合わせて見え方調整） */
+.open {
+  max-height: 480px; /* 長文なら値を上げるか、height:autoアニメはJSで計測 */
+}
+
+/* レスポンシブ微調整 */
+@media (max-width: 640px) {
+  .trigger {
+    padding: 16px 16px;
+  }
+  .panelInner {
+    padding: 0 16px 16px 16px;
+  }
+}
