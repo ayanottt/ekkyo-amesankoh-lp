@@ -1,5 +1,4 @@
-.wrapper {
-}
+
 
 .list {
   margin: 0 auto;
@@ -46,7 +45,9 @@
 
 /* Qテキスト */
 .qText {
-  font-weight: 700;
+  font-weight: 600;
+  padding-left: 2em;
+  text-indent: -2em;
 }
 
 /* 右端の + アイコン（CSSのみで描画） */

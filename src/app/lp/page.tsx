@@ -10,22 +10,68 @@ export const metadata = {
 
 export default function LP() {
   const items = [
-    {
-      question: "越境ECは初めてで不安です。本当に始められますか？",
-      answer:
-        "初回ヒアリングで体制・商品・法規制を棚卸しし、最小構成から段階的に開始できます。運用代行もOKです。",
-    },
-    {
-      question: "食品や化粧品など規制が厳しい商品でも対応できますか？",
-      answer:
-        " EUでの表示・成分・輸入手続きに関する要件を確認し、必要なラベルや書類の整備をサポートします。",
-    },
-    {
-      question: "現地に在庫を置いてEU内から発送できますか？",
-      answer:
-        " 現地3PLと連携し、在庫保管・ピッキング・返品処理までワンストップで対応可能です。",
-    },
-  ];
+  {
+    question: "越境ECは初めてで不安です。本当に始められますか？",
+    answer: (
+      <>
+        はい。小規模なテスト導入（LP制作＋広告運用）から始めることができます。
+        <br />
+        無料相談で御社商品に合った進め方をご提案いたします。
+      </>
+    ),
+  },
+  {
+    question: "食品や化粧品など規制が厳しい商品でも対応できますか？",
+    answer: (
+      <>
+        EU規制に合わせた翻訳・表記を行い、専門スタッフが事前チェックします。
+        <br />
+        販売可能かどうかの事前確認もお気軽にご相談ください。
+      </>
+    ),
+  },
+  {
+    question: "現地に在庫を置いてEU内から発送できますか？",
+    answer: (
+      <>
+        はい。現地倉庫を利用することで配送スピードが向上し、購入者の信頼も高まります。
+        <br />
+        ご希望に応じて最適な物流方法をご提案いたします。
+      </>
+    ),
+  },
+  {
+    question: "現地で本当に売れるのか不安です。",
+    answer: (
+      <>
+        事前の市場調査やテスト販売により、リスクを抑えつつ需要を確認できます。
+        <br />
+        調査データに基づいた販売シミュレーションもご提供可能です。
+      </>
+    ),
+  },
+  {
+    question: "社内に人材がいなくても運用できますか？",
+    answer: (
+      <>
+        サイト更新・広告運用・顧客対応まで代行可能。社内は商品情報提供だけで運用できます。
+        <br />
+        運用開始後も専任スタッフが伴走サポートいたします。
+      </>
+    ),
+  },
+  {
+    question: "初期費用以外に追加コストはありますか？",
+    answer: (
+      <>
+        広告費や配送費など実費が発生しますが、事前に明示し予算に合わせたご提案を行います。
+        <br />
+        まずは概算見積もりを無料でご提示いたします。
+      </>
+    ),
+  },
+];
+
   return (
     <main className="lp">
       {/* header */}
@@ -58,10 +104,10 @@ export default function LP() {
               <div className="hero-content">
                 <p className="hero-subtitle"><span className="highlight">“売りたい”</span>を<span className="highlight">“売れる”</span>に変える</p>
                 <h1 className="hero-title">
-                  越境ECトータルサポート
+                  越境EC<br className="sp-only"/>トータルサポート
                 </h1>
                 <p className="hero-description">
-                  市場調査からサイト構築、運用まで、海外展開をまるごとサポートします。
+                  市場調査からサイト構築、運用まで、<br className="sp-only"/>海外展開をまるごとサポートします。
                 </p>
                 <div className="btn-row">
                   <div className="btn-blue btn-document btn">
@@ -138,7 +184,7 @@ export default function LP() {
           <div className="container">
             <h2 className="services-title">
               こうしたお悩みをまとめて解決するのが、
-              <br />
+              <br className="pc-only"/>
               当社の<span className="highlight">超短期ECサポートサービス</span>です。
             </h2>
 
@@ -210,7 +256,7 @@ export default function LP() {
         <section className="section">
           <div className="container">
             <h2 className="reasons-title">
-              私たちが選ばれる<span className="highlight">3つの理由</span>
+              私たちが選ばれる<br className="sp-only"/><span className="highlight">3つの理由</span>
             </h2>
 
             <div className="reasons-list">
@@ -759,7 +805,7 @@ export default function LP() {
         <div className="container">
           <div className="lp-final-cta">
             <h2 className="lp-final-cta-title">
-              あなたの<span className="highlight">ビジネス</span>を、<span className="highlight">次のステージ</span>へ
+              あなたの<span className="highlight">ビジネス</span>を、<br className="sp-only"/><span className="highlight">次のステージ</span>へ
             </h2>
             <p className="lp-final-cta-subtitle">まずはお気軽にご相談ください</p>
             <div className="btn-row">
@@ -772,7 +818,7 @@ export default function LP() {
             </div>
           </div>
           <div className="lp-final-cta cta-mailmagazin">
-            <h2>最新情報を知りたい方はこちら</h2>
+            <h2>最新情報を<br className="sp-only"/>知りたい方はこちら</h2>
             <div className="btn-row">
               <div className="btn-green btn-mailmagazin btn">
                 <Link href="/">メルマガを登録する</Link>
