@@ -21,7 +21,11 @@ a{
   text-decoration: none;
   transition: all 0.2s ease;
 }
-
+@media (max-width: 768px){
+  html{
+    font-size: 14px;
+  }
+}
 /* ============================================
 common
 ============================================ */
@@ -72,11 +76,27 @@ h3 {
 .note {
   font-weight: 400;
   font-size: .8rem;
+  text-indent: -1em;
+  padding-left: 1em;
 }
 .list-disc {
    list-style: disc;
    padding-left: 1.4em;
    text-align: left;
+}
+.pc-only{
+  display: block;
+}
+.sp-only{
+  display: none;
+}
+@media (max-width: 768px){
+  .pc-only{
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
 }
 /* ============================================
 btn
@@ -182,9 +202,27 @@ header {
 }
 .header-btn a {
   font-size: 1.1rem;
-  box-shadow: 0 0 24px rgba(114, 199, 255, .3);
+  box-shadow: 0 0 24px rgba(114, 199, 255, .5);
 }
-
+@media (max-width: 768px){
+  .header-box .header-btn{
+    width: 46%;
+  }
+  .logo{
+    width: 15%;
+  }
+  .header-box .btn-row{
+    width: 82%;
+    gap:.5rem
+  }
+  .header-btn a{
+    padding: 1rem .5rem 1rem 1.5rem;
+    font-size: 1rem;
+  }
+  .header-btn a:before{
+    left: 1em;
+  }
+}
 
 
 /* ============================================
@@ -423,7 +461,9 @@ Plan
   margin-top: 1em;
   color: var(--white);
 }
-
+.pricing-table-wrapper{
+  overflow: visible;
+}
 .pricing-table,.pricing-footer__table {
   background-color: var(--white);
   width: 100%;
@@ -538,8 +578,81 @@ content: "";
   font-size: 1.2rem;
   font-weight: 600;
 }
+.tategaki{
+  writing-mode: vertical-rl;
+  text-orientation: upright; /* ラテン文字や数字も直立 */
+  line-height: 1.8;
+  vertical-align: middle;
+  text-align: center;
+}
+@media (max-width: 768px){
+  .pricing-table-wrapper{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+  }
+  .table-header--light{
+   white-space: nowrap;
+   padding: .6rem;
+  }
+  .table-cell--feature-left{
+    white-space: nowrap;
+  }
+  .table-header--light{
+    font-size: 1.2rem;
+  }
+  .table-cell{
+    padding: .4rem;
+  }
+  .table-header {
+    width: 15%;
+  }
+  .table-first{
+    width: 50%;
+  }
+  .table-header span{
+    font-size: .85rem;
+    padding: 0 2em;
+  }
+  .table-header span:before, .table-header span:after{
+    width: 3em;
+  }
+  .table-header span:before{
+    left: -.5em;
+    transform: translateY(-50%) rotate(80deg);
+  }
+  .table-header span:after{
+    right: -.5em;
+    transform: translateY(-50%) rotate(-80deg);
+  }
+  .pricing-description{
+    font-size: 1.4rem;
+  }
+  .pricing-footer__table{
+    width: 100%;
+  }
+  .pricing-footer__table .table-header{
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .pricing-footer__table .table-header span{
+    font-size: 1rem;
+    padding: 0;
 
+  }
+  .pricing-footer__table,
+  .pricing-footer__table tbody,
+  .pricing-footer__table tr {
+    display: block;            /* 行ごとブロック化 */
+    width: 100%;
+  }
+  .pricing-footer__table th,
+  .pricing-footer__table td {
+    display: block;            /* セルを縦に並べる */
+    width: 100%;
+    box-sizing: border-box;
+  }
 
+}
 
 
 

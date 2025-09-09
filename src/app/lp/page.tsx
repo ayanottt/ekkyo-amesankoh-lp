@@ -44,7 +44,7 @@ export default function LP() {
               <Link href="/">資料請求する</Link>
             </div>
             <div className="header-btn btn-red btn-contact btn">
-              <Link href="/">無料相談を申し込む</Link>
+              <Link href="/">無料相談する</Link>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function LP() {
                     <Link href="/">資料請求する</Link>
                   </div>
                   <div className="btn-red btn-contact btn">
-                    <Link href="/t">無料相談を申し込む</Link>
+                    <Link href="/t">無料相談する</Link>
                   </div>
                 </div>
               </div>
@@ -288,15 +288,15 @@ export default function LP() {
                   <tr>
                     <th className="table-header table-first" colSpan={3}>プラン名</th>
                     <th className="table-header table-header--light">
-                      <span className="table-header__subtitle">試験的に海外展開を始めたい</span><br />
+                      <span className="table-header__subtitle">試験的に<br className="sp-only"/>海外展開を始めたい</span><br />
                       ライトプラン
                     </th>
                     <th className="table-header table-header--light">
-                      <span className="table-header__subtitle">基本的なサービスが揃ってる</span><br />
+                      <span className="table-header__subtitle">基本的な<br className="sp-only"/>サービスが揃ってる</span><br />
                       スタンダードプラン
                     </th>
                     <th className="table-header table-header--light">
-                      <span className="table-header__subtitle">まるっとお任せしたい</span><br />
+                      <span className="table-header__subtitle">まるっと<br className="sp-only"/>お任せしたい</span><br />
                       プレミアムプラン
                     </th>
                   </tr>
@@ -310,9 +310,9 @@ export default function LP() {
                   </tr>
                   <tr>
                     <td className="table-cell table-cell--feature" colSpan={3}>対象</td>
-                    <td className="table-cell table-cell--center">越境EC初期導入・テスト向け（DtoC）</td>
-                    <td className="table-cell table-cell--center">本格展開・売上化を目指す企業向け</td>
-                    <td className="table-cell table-cell--center">現地最適化＆継続成長型</td>
+                    <td className="table-cell table-cell--center">越境EC初期導入・<br className="sp-only"/>テスト向け（DtoC）</td>
+                    <td className="table-cell table-cell--center">本格展開・<br className="sp-only"/>売上化を目指す企業向け</td>
+                    <td className="table-cell table-cell--center">現地最適化＆<br className="sp-only"/>継続成長型</td>
                   </tr>
                   <tr>
                     <td className="table-cell table-cell--feature" colSpan={3}>契約期間</td>
@@ -321,27 +321,27 @@ export default function LP() {
                     <td className="table-cell table-cell--center">6ヶ月</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature" rowSpan={12}>サービス内容</td>
-                    <td className="table-cell table-cell--feature table-cell--feature-left" rowSpan={3}>戦略設計</td>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">市場・商品分析</td>
+                    <td className="table-cell table-cell--feature tategaki" rowSpan={12}>サービス内容</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left tategaki" rowSpan={3}>戦略設計</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">市場・<br className="sp-only"/>商品分析</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">KPIレポート提出<p className="note">※月1回</p></td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">KPIレポート<br className="sp-only"/>提出<p className="note">※月1回</p></td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">CRM導入支援</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">CRM導入<br className="sp-only"/>支援</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left" rowSpan={3}>EC・LP構築</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left tategaki" rowSpan={3}>EC・LP構築</td>
                     <td className="table-cell table-cell--feature table-cell--feature-left">LP制作</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
@@ -354,46 +354,46 @@ export default function LP() {
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">問い合わせフォーム設計</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">問い合わせ<br className="sp-only"/>フォーム設計</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left" rowSpan={2}>翻訳・ローカライズ</td>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">商品翻訳<p className="note">※日本語→英語/ドイツ語</p></td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left tategaki" rowSpan={2}>翻訳・ローカライズ</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">商品翻訳<p className="note">※日本語→<br className="sp-only"/>英語/<br className="sp-only"/>ドイツ語</p></td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">ECサイトの多言語対応<p className="note">※日本語/英語/ドイツ語</p></td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">ECサイトの<br className="sp-only"/>多言語対応<p className="note">※日本語/<br className="sp-only"/>英語/<br className="sp-only"/>ドイツ語</p></td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left" rowSpan={2}>SNS・広告運用代行</td>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">SNS広告初期設定</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left tategaki" rowSpan={2}>SNS・広告運用代行</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">SNS広告<br className="sp-only"/>初期設定</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">SNS広告運用代行</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">SNS広告<br className="sp-only"/>運用代行</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left" rowSpan={2}>現地サポート</td>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">現地カスタマー対応</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left tategaki" rowSpan={2}>現地サポート</td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">現地<br className="sp-only"/>カスタマー<br className="sp-only"/>対応</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
                     <td className="table-cell table-cell--center">○</td>
                   </tr>
                   <tr>
-                    <td className="table-cell table-cell--feature table-cell--feature-left">現地市場に合わせた改善提案<p className="note">※レポート×改善会議</p></td>
+                    <td className="table-cell table-cell--feature table-cell--feature-left">現地市場に<br className="sp-only"/>合わせた<br className="sp-only"/>改善提案<p className="note">※レポート×<br className="sp-only"/>改善会議</p></td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">×</td>
                     <td className="table-cell table-cell--center">○</td>
@@ -407,7 +407,7 @@ export default function LP() {
               <table className="pricing-footer__table">
                 <tbody>
                   <tr>
-                    <th className="table-header">オプション<span>¥50,000〜 /月</span></th>
+                    <th className="table-header">オプション<br/><span>¥50,000〜 /月</span></th>
                     <td className="table-cell">
                       <ul className="list-disc">
                         <li>広告運用（月額）</li>
@@ -426,7 +426,7 @@ export default function LP() {
                 <Link href="/">資料請求する</Link>
               </div>
               <div className="btn-red btn-contact btn">
-                <Link href="/t">無料相談を申し込む</Link>
+                <Link href="/t">無料相談する</Link>
               </div>
             </div>
           </div>
@@ -738,7 +738,7 @@ export default function LP() {
                 <Link href="/">資料請求する</Link>
               </div>
               <div className="btn-red btn-contact btn">
-                <Link href="/t">無料相談を申し込む</Link>
+                <Link href="/t">無料相談する</Link>
               </div>
             </div>
           </div>
@@ -767,7 +767,7 @@ export default function LP() {
                 <Link href="/">資料請求する</Link>
               </div>
               <div className="btn-red btn-contact btn">
-                <Link href="/t">無料相談を申し込む</Link>
+                <Link href="/t">無料相談する</Link>
               </div>
             </div>
           </div>
