@@ -1,19 +1,9 @@
-:root {  /* 帯の青 */
-  --fg: #0f1720;       /* 文字色 */
-  --muted: #6b7280;    /* サブ */
-  --radius: 6px;
-}
-
 .wrapper {
-  background: var(--blue);
-  padding: 24px 0;
 }
 
 .list {
   margin: 0 auto;
   padding: 0;
-  list-style: none;
-  max-width: 960px;
 }
 
 .item + .item {
@@ -25,6 +15,13 @@
   margin: 0;
 }
 
+.list li {
+  background: #fff;
+  border-radius: 1.2rem;
+}
+.list h3 {
+  font-size: 1.2rem;
+}
 /* トリガー（見出し行） */
 .trigger {
   appearance: none;
@@ -33,13 +30,10 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   gap: 16px;
-  background: #fff;
   color: var(--fg);
   border: none;
-  padding: 20px 24px;
-  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
   text-align: left;
-  line-height: 1.6;
   cursor: pointer;
   position: relative;
 }
@@ -68,8 +62,8 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 16px;
-  height: 2px;
+  width: 26px;
+  height: 4px;
   background: var(--blue);
   transition: transform 160ms ease;
 }
@@ -93,11 +87,7 @@
 
 /* 中身の白ボックス（青帯との間に余白を作る） */
 .panelInner {
-  background: #fff;
-  color: var(--fg);
-  border-radius: 0 0 var(--radius) var(--radius);
-  padding: 0 24px 20px 24px;
-  border-top: 8px solid var(--blue); /* 画像の青い帯の雰囲気 */
+padding: 0 2rem 1.5rem;
 }
 
 /* 開いた状態：十分大きな max-height にする（内容量に合わせて見え方調整） */

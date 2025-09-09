@@ -61,7 +61,7 @@ export default function LP() {
                   越境ECトータルサポート
                 </h1>
                 <p className="hero-description">
-                  市場調査からサイト構築、運用まで、<br />海外展開をまるごとサポートします。
+                  市場調査からサイト構築、運用まで、海外展開をまるごとサポートします。
                 </p>
                 <div className="btn-row">
                   <div className="btn-blue btn-document btn">
@@ -555,13 +555,13 @@ export default function LP() {
                     <p className="case-explan">B向けECとしての可能性を広げ、卸売や提携も視野に入れた仕組みづくりを心がけています。</p>
                   </div>
                   <div className="case-btn btn-nomal btn">
-                    <Link href="https://neotokyocards.com/ja">詳細を見る</Link>
+                    <Link href="https://neotokyocards.com/ja">ECサイトを見る</Link>
                   </div>
                 </div>
               </div>
 
               <div className="lp-case-study-card">
-                <p className="lp-case-study__category lp-case-study__category_ec">EC制作</p>
+                <p className="lp-case-study__category lp-case-study__category_lp">LP制作</p>
                 <div className="lp-case-study-image">
                   <Image
                     src="/images/lp/work_04.jpg"
@@ -597,13 +597,13 @@ export default function LP() {
 
                   </div>
                   <div className="case-btn btn-nomal btn">
-                    <Link href="https://artdeli.info/">ECサイトを見る</Link>
+                    <Link href="https://artdeli.info/">LPを見る</Link>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="case-btn btn-nomal btn">
+            <div className="case-btn btn-nomal btn case-footer">
               <Link href="https://logot.de/work">その他の制作実績を見る</Link>
             </div>
           </div>
@@ -755,7 +755,7 @@ export default function LP() {
       </section>
 
       {/* Final CTA section */}
-      <section className="section section--light">
+      <section className="section section-cta">
         <div className="container">
           <div className="lp-final-cta">
             <h2 className="lp-final-cta-title">
@@ -771,7 +771,7 @@ export default function LP() {
               </div>
             </div>
           </div>
-          <div className="lp-final-cta">
+          <div className="lp-final-cta cta-mailmagazin">
             <h2>最新情報を知りたい方はこちら</h2>
             <div className="btn-row">
               <div className="btn-green btn-mailmagazin btn">
